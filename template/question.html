@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST">
+{% csrf_token %}
+	{{ form.non_field_errors }}
+	{{ form.source.errors }}
+	{{ form.source }}
+<div class="well">
+<ol>
+<p>	<li>Presence of the amine group in N-methylaniline can detected by the 
+		<ol>
+			<li> Azo-dye test
+			<li> Formation of nitroso compound
+			<li> Carbyl amine test
+			<li> Mulliken Barker test
+		</ol>
+	{{ form.AnsQ1.label_tag }}
+	{{ form.AnsQ1.errors }}
+	{{ form.AnsQ1 }}
+</p>
+<p>	<li>Neutral medium reduction of aromatic nitro compound by zinc and ammonium chloride generates
+		<ol>
+			<li> Hydroxyl amine derivative
+			<li> Primary amine derivative
+			<li> Diazo compound
+			<li> Isocyanide derivative
+		</ol>
+	{{ form.AnsQ2.label_tag }}
+	{{ form.AnsQ2.errors }}
+	{{ form.AnsQ2 }}
+</p>
+<p>	<li>In Fehling's reagent which one of the following is not present
+		<ol>
+			<li> Copper sulfate
+			<li> Sodium bicarbonate
+			<li> Sodium hydroxide
+			<li> Sodium potassium tartrate
+		</ol>
+	{{ form.AnsQ3.label_tag }}
+	{{ form.AnsQ3.errors }}
+	{{ form.AnsQ3 }}
+</p>
+<p>	<li>In Lassaigne's test the presence of sulfur in organic sample hinders the detection of halogen. The difficulty can be overcome by removing sulfur in the form of
+		<ol>
+			<li> Sulfur dioxide
+			<li> Sulfur ppt.
+			<li> Hydrogen sulfide
+			<li> Insoluble sulfate ppt.
+		</ol>
+	{{ form.AnsQ4.label_tag }}
+	{{ form.AnsQ4.errors }}
+	{{ form.AnsQ4 }}
+</p>
+<p>	<li>Mechanistic pathway of the formation of oxime from carbonyl compound and hydroxyl amine is regarded as
+		<ol>
+			<li> Substitution reaction
+			<li> Addition reaction
+			<li> Elimination reaction
+			<li> Addition-elimination reaction
+		</ol>
+	{{ form.AnsQ5.label_tag }}
+	{{ form.AnsQ5.errors }}
+	{{ form.AnsQ5 }}
+</p>
+<p>	<li>Which derivative would you like to prepare for the sample of anthracene in your laboratory
+		<ol>
+			<li> Amide derivative
+			<li> picrate
+			<li> Benzoyl derivative
+			<li> DNPh derivative
+		</ol>
+	{{ form.AnsQ6.label_tag }}
+	{{ form.AnsQ6.errors }}
+	{{ form.AnsQ6 }}
+</p>
+<p>	<li>You have given a binary mixture of carboxylic acid and phenolic compounds. Which one of the following reagents is suitable for separating the mixture by solvent extraction method in diethyl ether and aqueous medium
+		<ol>
+			<li> Sodium hydroxide
+			<li> Sodium bicarbonate
+			<li> Hydrochloric acid
+			<li> Nitric acid
+		</ol>
+	{{ form.AnsQ7.label_tag }}
+	{{ form.AnsQ7.errors }}
+	{{ form.AnsQ7 }}
+</p>
+<p>	<li>Beilstein test is used for detecting the presence of the following element in the sample
+		<ol>
+			<li> sulfur
+			<li> Halogen
+			<li> Oxygen
+			<li> Nitrogen
+		</ol>
+	{{ form.AnsQ8.label_tag }}
+	{{ form.AnsQ8.errors }}
+	{{ form.AnsQ8 }}
+</p>
+<p>	<li>Presence of impurity in a sample makes the following changes in physical character
+		<ol>
+			<li> Decrease in melting point
+			<li> Increase in melting point
+			<li> Decrease in boiling point
+			<li> None in the list
+		</ol>
+	{{ form.AnsQ9.label_tag }}
+	{{ form.AnsQ9.errors }}
+	{{ form.AnsQ9 }}
+</p>
+<p>	<li>Which one of the following reaction would you select to distinguish between aliphatic and aromatic primary amine?
+		<ol>
+			<li> Carbyl amine test
+			<li> Cacodyl oxide test
+			<li> Azo dye test
+			<li> Mulliken Barker test
+		</ol>
+	{{ form.AnsQ10.label_tag }}
+	{{ form.AnsQ10.errors }}
+	{{ form.AnsQ10 }}
+</p>
+</ol>
+</div>
+<input type="submit" value="submit" class="btn btn-primary btn-lg">
+</form>
+{% endblock %}
